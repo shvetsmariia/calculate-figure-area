@@ -1,26 +1,48 @@
-function calculateSquareArea () {
-    const a = document.getElementById("dlinaStoroniKvadrata").value;
+function calculateSquareArea (a) {
     const result = a * a; 
-    document.getElementById('ploschadKvadrata').innerHTML = result; 
+    if (a == 0 || a < 0) {
+        return("Enter a valid number!"); 
+    }
+    else {
+        return result; 
+    }
 }
 
-function calculateRectangleArea () {
-    const a = document.getElementById("pervayaStoronaPriamougolnika").value;
-    const b = document.getElementById("drugayaStoronaPriamougolnika").value;
+function calculateRectangleArea (a, b) {
     const result = a * b; 
-    document.getElementById('ploschadPriamougolnika').innerHTML = result; 
+    if (a == 0 || a < 0) {
+        return("Enter a valid number!"); 
+    }
+    if (b == 0 || b < 0) {
+        return("Enter a valid number!"); 
+    }
+    else {
+        return result; 
+    }
 }
 
-function calculateParallelogramArea () {
-    const a = document.getElementById("dlinaStoronyParalelograma").value;
-    const h = document.getElementById("dlinaVisotyParalelograma").value;
+function calculateParallelogramArea (a, h) {
     const result = a * h; 
-    document.getElementById('ploschadParalelograma').innerHTML = result; 
+    if (a == 0 || a < 0) {
+        return("Enter a valid number!"); 
+    }
+    if (h == 0 || h < 0) {
+        return("Enter a valid number!"); 
+    }
+    else {
+        return result; 
+    }
 }
 
-function calculateRhombusArea () {
-    const a = document.getElementById("dlinaStoronyRomba").value;
-    const h = document.getElementById("dlinaVisotyRomba").value;
+function calculateRhombusArea (a, h) {
     const result = a * h; 
-    document.getElementById('ploschadRomba').innerHTML = result; 
+    if (a == 0 || a < 0) {
+        return("Enter a valid number!"); 
+    }
+    if (h == 0 || h < 0) {
+        return("Enter a valid number!"); 
+    }
+    else {
+        return result; 
+    }
 }
